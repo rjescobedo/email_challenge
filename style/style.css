@@ -2,64 +2,78 @@
     --clr-primary: #377C9B;
     --clr-hover-primary: #2f657f;
     --clr-secondary: #84B77C;
+
+    --clr-text: rgb(94, 92, 92);
+    --clr-hover-text: rgb(61, 59, 59);
 } 
 
 hr {
-    background-color: black;
-    margin: 2em;
+    background-color: rgba(128, 128, 128, 0.604);
+    max-width: 1100px;
 }
 
 /* Header CSS */
 .header-title-container {
     text-align: center;
-    padding: 2rem;
+    padding-top: 2rem;
 }
 .header-title-front {
     color: var(--clr-primary);
+    font-family: 'Inter', sans-serif;
     font-size: 2rem;
     font-weight: 500;
 }
 
 .header-title-back {
     color: var(--clr-secondary);
+    font-family: 'Inter', sans-serif;
     font-size: 2rem;
     font-weight: 500;
 }
 
 /* Too good to pass up section */
+.pass-container {
+    padding: 7em;
+    text-align: center;
+}
+
 .custom-btn {
     background-color: var(--clr-primary);
+    font-family: 'Courgette', cursive;
+    font-size: 1.2em;
     color: white;
     border: none;
     border-radius: 2px;
     padding: .5em;
-    width: 12rem;
+    width: 15rem;
 }
 
 .custom-btn:hover {
     background-color: var(--clr-hover-primary);
-}
-
-.pass-container {
-    padding: 10em;
-    text-align: center;
+    transform: 1.5s;
+    box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.503);
+    transition: box-shadow 0.5s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
 }
 
 .pass-title {
     color: var(--clr-primary);
+    font-family: 'Lora', serif;
+    font-size: 3em;
     margin: 0;
     padding-bottom: 1em;
 }
 
 .pass-text {
+    color: var(--clr-text);
     margin: 0 auto 2em auto;
     width: 20em;
 }
 
 /* Images/Cards Section */
-/* .images-container {
-    margin: auto;
-} */
+.images-container {
+    text-align: center;
+}
 
 .first-card {
     text-align: center;
@@ -68,15 +82,51 @@ hr {
     width: 300px;
     height: 300px;
     padding: 2em;
+    margin: .5em;
 }
 .second-card {
-    background-image: url("/img/forest.jpg");
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.338),
+        rgba(0, 0, 0, 0.408)), 
+        url("/img/forest.jpg");
     background-position: bottom;
     text-align: center;
     width: 300px;
     height: 300px;
     color: white;
     padding: 3em;
+    margin: .5em;
+}
+
+.third-card {
+    text-align: center;
+    background: var(--clr-primary);
+    color: white;
+    width: 300px;
+    height: 300px;
+    padding: 2em;
+    margin: .5em;
+}
+
+.quote {
+    font-family: 'Lora', serif;
+
+}
+
+.author {
+    font-family: 'Waterfall', cursive;
+    font-size: 2.5em;
+}
+
+.second-title {
+    font-family: 'Lora', serif;
+    font-size: 1.9em;
+    font-weight: 700;
+}
+
+.second-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
 }
 
 .btn-link {
@@ -87,21 +137,21 @@ hr {
     color: rgb(205, 203, 203) !important;
 }
 
-.third-card {
-    text-align: center;
-    background: var(--clr-primary);
-    color: white;
-    width: 300px;
-    height: 300px;
-    padding: 2em;
-}
 
 .third-first_text {
+    font-family: 'BioRhyme Expanded', serif;
+    font-size: 1.6em;
     border-style: double none none none;
+    margin: 0;
+    padding-top: .5em;
 }
 
 .third-second_text {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6em;
     border-style: none none double none;
+    margin: 0;
+    padding-bottom: .5em;
 
 }
 
@@ -117,14 +167,20 @@ hr {
 }
 
 .item {
+    word-break: none;
     width: 10em;
+    height: 2em;
     font-size: .9em;
     padding: 0 1em;
     border-right: 1px solid;
 }
 
 .item a {
-    color: black;
+    color: var(--clr-text);
+}
+
+.item a:hover {
+    color: var(--clr-hover-text);
 }
 
 .item:nth-last-child(1) {
@@ -146,5 +202,37 @@ hr {
 .btn-social-icon:hover {
     background-color: var(--clr-hover-primary) !important;
 }
+
+/* Bottom Navigation */
+.bottom-navigation {
+    margin: auto;
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+}
+
+.navigation-list {
+    list-style-type: none;
+    margin: auto;
+}
+
+.navigation-list li {
+    text-align: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.47);
+    padding: 1em;
+}
+
+.navigation-list li:nth-last-child(1) {
+    border: none;
+}
+
+.navigation-list a {
+    color: var(--clr-text);
+}
+
+.navigation-list a:hover {
+    color: var(--clr-hover-text);
+}
+
+
 
 
