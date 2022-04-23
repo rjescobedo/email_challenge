@@ -1,0 +1,150 @@
+:root {
+    --clr-primary: #377C9B;
+    --clr-hover-primary: #2f657f;
+    --clr-secondary: #84B77C;
+} 
+
+hr {
+    background-color: black;
+    margin: 2em;
+}
+
+/* Header CSS */
+.header-title-container {
+    text-align: center;
+    padding: 2rem;
+}
+.header-title-front {
+    color: var(--clr-primary);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.header-title-back {
+    color: var(--clr-secondary);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* Too good to pass up section */
+.custom-btn {
+    background-color: var(--clr-primary);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: .5em;
+    width: 12rem;
+}
+
+.custom-btn:hover {
+    background-color: var(--clr-hover-primary);
+}
+
+.pass-container {
+    padding: 10em;
+    text-align: center;
+}
+
+.pass-title {
+    color: var(--clr-primary);
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+.pass-text {
+    margin: 0 auto 2em auto;
+    width: 20em;
+}
+
+/* Images/Cards Section */
+/* .images-container {
+    margin: auto;
+} */
+
+.first-card {
+    text-align: center;
+    background: var(--clr-secondary);
+    color: white;
+    width: 300px;
+    height: 300px;
+    padding: 2em;
+}
+.second-card {
+    background-image: url("/img/forest.jpg");
+    background-position: bottom;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    color: white;
+    padding: 3em;
+}
+
+.btn-link {
+    color: white !important;
+}
+
+.btn-link:hover {
+    color: rgb(205, 203, 203) !important;
+}
+
+.third-card {
+    text-align: center;
+    background: var(--clr-primary);
+    color: white;
+    width: 300px;
+    height: 300px;
+    padding: 2em;
+}
+
+.third-first_text {
+    border-style: double none none none;
+}
+
+.third-second_text {
+    border-style: none none double none;
+
+}
+
+/* Footer */
+.footer-container {
+    padding: .5em;
+}
+
+.list-items {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.item {
+    width: 10em;
+    font-size: .9em;
+    padding: 0 1em;
+    border-right: 1px solid;
+}
+
+.item a {
+    color: black;
+}
+
+.item:nth-last-child(1) {
+    border: none;
+}
+
+.social-items{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.btn-social-icon {
+    margin: 0 .5em;
+    border-radius: 50% !important;
+    background-color: var(--clr-primary) !important;
+}
+
+.btn-social-icon:hover {
+    background-color: var(--clr-hover-primary) !important;
+}
+
+

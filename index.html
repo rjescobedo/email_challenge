@@ -9,15 +9,27 @@
     <!--Bootstrap CSS-->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap Social Buttons-->
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+
     <title>Wunderkind Challenge</title>
 </head>
 <body>
 
 <!-- Header -->
 <header>
-    <h1>uncommongoods</h1>
-    <nav>
-        <ul>
+    <div class="container header-title-container">
+        <div class="row">
+            <div class="col">
+                <span class="header-title-front">uncommon</span><span class="header-title-back">goods</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- <nav class="">
+        <ul class="">
             <li>home</li>
             <li>kitchen & bar</li>
             <li>jewelry</li>
@@ -26,55 +38,102 @@
             <li>this just in</li>
             <li> sale</li>
         </ul>
-    </nav>
+    </nav> -->
 </header>
-
+<hr>
 <!--Too good to pass up section-->
-<section class="container">
+<section class="container-fluid bg-light pass-container">
     <div class="row">
         <div class="col">
-            <h2>Too good to pass up</h2>
-            <p>Take another look at the items left in your cart <strong>before they sell out.</strong></p>
-            <button>see my cart</button>
+            <h2 class="pass-title">Too good to pass up</h2>
+            <p class="pass-text">Take another look at the items left in your cart <strong>before they sell out.</strong></p>
+            <button class="custom-btn">see my cart</button>
         </div>
     </div>
 </section>
+<hr>
 
 <!--3 images section-->
 <section class="container">
     <div class="row">
-        <div class="col col-md-4">
-            <img src="" alt="">
+        <div class="col col-lg-4">
+            <div class="first-card">
+                <q class="quote">I just had to write back
+                    because never in any of
+                    my years purchasing online,
+                    via phone, in person,
+                    whatever way I've made my
+                    purchases, have I been treated
+                    so nice by a company.
+                </q>
+                <p class="author">- Marilyn Kuchma</p>
+            </div>
         </div>
-        <div class="col col-md-4">
-            <img src="" alt="">
+        <div class="col col-lg-4">
+            <div class="second-card">
+                <h4>Better to Give</h4>
+                <p>we've donated over <strong>$1 million</strong> to charities chosen by our customers.</p>
+                <button class="btn btn-link">learn more &gt;</button>
+            </div>
         </div>
-        <div class="col col-md-4">
-            <img src="" alt="">
-        </div>
-    </div>
-</section>
-
-<!--Footer-->
-<footer class="container">
-    <div class="row">
-        <div class="col">
-            <ul>
-                <li>contact us</li>
-                <li>about us</li>
-                <li>request a catalog</li>
-                <li>corporate gifts & bulk orders</li>
-                <li>blog</li>
-            </ul>
-            <div>
-                <a><i class=""></i></a>
-                <a><i class=""></i></a>
-                <a><i class=""></i></a>
-                <a><i class=""></i></a>
+        <div class="col col-lg-4">
+            <div class="third-card">
+                <h3 class="third-first_text">Forever - & Ever -</h3>
+                <h3 class="third-second_text">Returns & Exchanges</h3>
             </div>
         </div>
     </div>
+</section>
+<hr>
+<!--Footer-->
+<footer class="container footer-container">
+    <div class="row">
+        <div class="col-12 col-lg-8">
+            <ul class="list-items">
+                <li class="item">
+                    <a href="#">contact us</a>
+                </li>
+                <li class="item">
+                    <a href="#">about us</a>
+                </li>
+                <li class="item">
+                    <a href="#">request a catalog</a>
+                </li>
+                <li class="item">
+                    <a href="#">corporate gifts & bulk orders</a>
+                </li>
+                <li class="item">
+                    <a href="#">blog</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-12 col-lg-4 social-container">
+            <ul class="social-items">
+                <li>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn btn-social-icon btn-pinterest" href="http://pinterest.com/" target="_blank">
+                        <i class="fa fa-pinterest"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </footer>
+<hr>
 
 <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
