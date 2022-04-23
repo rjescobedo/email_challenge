@@ -50,7 +50,8 @@ hr {
 
 .custom-btn:hover {
     background-color: var(--clr-hover-primary);
-    transform: 1.5s;
+    transform: scale(1.05);
+    transition: transform .5s ease-in-out;
     box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.503);
     transition: box-shadow 0.5s ease-in-out;
     transition: background-color 0.4s ease-in-out;
@@ -84,6 +85,11 @@ hr {
     padding: 2em;
     margin: .5em;
 }
+
+.first-card:hover {
+    transform: scale(1.05);
+    transition: transform .3s;
+}
 .second-card {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.338),
@@ -98,6 +104,11 @@ hr {
     margin: .5em;
 }
 
+.second-card:hover {
+    transform: scale(1.05);
+    transition: transform .3s;
+}
+
 .third-card {
     text-align: center;
     background: var(--clr-primary);
@@ -106,6 +117,11 @@ hr {
     height: 300px;
     padding: 2em;
     margin: .5em;
+}
+
+.third-card:hover {
+    transform: scale(1.05);
+    transition: transform .3s;
 }
 
 .quote {
@@ -155,24 +171,30 @@ hr {
 
 }
 
-/* Footer */
+/* Footer*/
 .footer-container {
-    padding: .5em;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
 }
 
 .list-items {
     display: flex;
-    list-style: none;
     text-align: center;
+    list-style: none;
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
 }
 
 .item {
-    word-break: none;
-    width: 10em;
-    height: 2em;
-    font-size: .9em;
     padding: 0 1em;
     border-right: 1px solid;
+}
+
+.item:hover {
+    background-color:rgba(205, 203, 203, 0.164);
 }
 
 .item a {
@@ -201,6 +223,43 @@ hr {
 
 .btn-social-icon:hover {
     background-color: var(--clr-hover-primary) !important;
+}
+
+/* Top Navigation */
+.top-navigation {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    padding: 0 1em;
+    border-right: 1px solid;
+}
+
+.nav-item:hover {
+    background-color:rgba(205, 203, 203, 0.164);
+}
+
+.nav-item a {
+    color: var(--clr-text);
+}
+
+.nav-item a:hover {
+    color: var(--clr-hover-text);
+}
+
+.nav-item:nth-last-child(1) {
+    border: none;
 }
 
 /* Bottom Navigation */
