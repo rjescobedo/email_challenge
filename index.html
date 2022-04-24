@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +19,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 
+    <script src="js/script.js" defer></script>
     <title>Wunderkind Challenge</title>
 </head>
 <body>
@@ -40,7 +42,7 @@
     <div class="row">
         <div class="col">
             <ul class="nav-items">
-                <li class="nav-item">
+                <li id="home" class="nav-item">
                     <a href="#">home</a>
                 </li>
                 <li class="nav-item">
@@ -74,7 +76,7 @@
         <div class="col">
             <h2 class="pass-title">Too good to pass up</h2>
             <p class="pass-text">Take another look at the items left in your cart <strong>before they sell out.</strong></p>
-            <button class="custom-btn">see my cart</button>
+            <button id="cart-btn" class="custom-btn">see my cart</button>
         </div>
     </div>
 </section>
@@ -100,7 +102,7 @@
             <div class="second-card">
                 <h3 class="second-title">Better to Give</h3>
                 <p class="second-text">we've donated over <strong>$1 million</strong> to charities chosen by our customers.</p>
-                <button class="btn btn-link">learn more &gt;</button>
+                <button id="learn-more" class="btn btn-link">learn more &gt;</button>
             </div>
         </div>
         <div class="offset-2 offset-md-3 col-lg-4 offset-lg-0">
