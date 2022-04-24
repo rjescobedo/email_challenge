@@ -9,17 +9,18 @@
 
 hr {
     background-color: rgba(128, 128, 128, 0.604);
-    max-width: 1100px;
+    max-width: 1140px;
 }
 
 /* Header CSS */
 .header-title-container {
     text-align: center;
+    padding: 0;
 }
 
 .logo {
-    width: 25em;
     margin: 0;
+    width: 20em;
     padding-top: 2em;
 }
 
@@ -39,7 +40,7 @@ hr {
 
 /* Too good to pass up section */
 .pass-container {
-    padding: 7em;
+    padding: 5em;
     text-align: center;
 }
 
@@ -78,67 +79,48 @@ hr {
 }
 
 /* Images/Cards Section */
-.images-container {
-    display: flex;
-    justify-content: center;
+.card-one {
+    background-color: var(--clr-secondary) !important;
 }
 
-.first-card {
-    text-align: center;
-    background: var(--clr-secondary);
-    color: white;
-    width: 325px;
-    height: 300px;
-    padding: 2em;
-    margin-bottom: 1em;
-}
-
-.second-card {
+.card-two {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.338),
-        rgba(0, 0, 0, 0.408)), 
-        url("/img/forest.jpg");
-    background-position: bottom;
-    text-align: center;
-    width: 325px;
-    height: 300px;
-    color: white;
-    padding: 3em;
-    margin-bottom: 1em;
+        linear-gradient(rgba(0, 0, 0, 0.362), 
+        rgba(0, 0, 0, 0.429)), 
+        url("/img/forest.png")
+        !important;
+    background-position: center;
 }
 
-.third-card {
-    text-align: center;
-    background: var(--clr-primary);
-    color: white;
-    width: 325px;
-    height: 300px;
-    padding: 2em;
+.card-three {
+    background-color: var(--clr-primary) !important;
 }
 
 .quote {
     font-family: 'Lora', serif;
-
+    font-size: 1.3em;
 }
 
 .author {
     font-family: 'Waterfall', cursive;
-    font-size: 2.5em;
+    font-size: 2.4em;
 }
 
 .second-title {
     font-family: 'Lora', serif;
-    font-size: 1.9em;
+    font-size: 2.3em;
     font-weight: 700;
+    margin: 1em 0;
 }
 
 .second-text {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .btn-link {
     color: white !important;
+    font-size: 1.3em !important;
 }
 
 .btn-link:hover {
@@ -148,40 +130,35 @@ hr {
 
 .third-first_text {
     font-family: 'BioRhyme Expanded', serif;
-    font-size: 1.6em;
+    font-size: 2em;
     border-style: double none none none;
-    margin: 0;
-    padding-top: .5em;
+    margin-top: .5em;
+    padding: .2em 0;
 }
 
 .third-second_text {
     font-family: 'Playfair Display', serif;
-    font-size: 2.6em;
+    font-size: 3.1em;
     border-style: none none double none;
-    margin: 0;
-    padding-bottom: .5em;
-
 }
 
 /* Footer*/
 .footer-container {
-    display: flex;
-    justify-content: space-between;
     padding: 0;
+    text-align: center;
 }
 
 .list-items {
     display: flex;
-    text-align: center;
+    justify-content: center;
     list-style: none;
     font-family: 'Lora', serif;
     font-size: 1em;
     padding: 0;
-    margin: 0;
 }
 
 .item {
-    padding: 0 1em;
+    padding: .5em;
     border-right: 1px solid;
 }
 
@@ -205,6 +182,7 @@ hr {
     display: flex;
     justify-content: center;
     list-style: none;
+    padding: 0;
 }
 
 .btn-social-icon {
@@ -256,22 +234,19 @@ hr {
 
 /* Bottom Navigation */
 .bottom-navigation {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
     font-family: 'Lora', serif;
     font-size: 1.5em;
+    text-align: center;
 }
 
 .navigation-list {
     list-style-type: none;
+    padding: 0;
 }
 
 .navigation-list li {
     border-bottom: 1px solid rgba(128, 128, 128, 0.47);
-    width: 20em;
-    padding: 1em;
+    padding: .5em;
 }
 
 .navigation-list li:nth-last-child(1) {
